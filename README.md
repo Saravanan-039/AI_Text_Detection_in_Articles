@@ -1,4 +1,3 @@
-**Example README.md for an AI Text Detection Model**
 
 # AI Text Detection in Articles
 
@@ -60,10 +59,3 @@ Potential future improvements include:
 **Contributions**
 
 We welcome contributions to this project. Feel free to submit issues, pull requests, or feature requests.
-
-**Note:** This is a simplified example. A more comprehensive README would include additional details like:
-* Specific dataset sources and preprocessing techniques
-* Detailed model architecture diagrams
-* Visualization of training and validation loss curves
-* More advanced usage examples and API documentation
-* Links to relevant research papers and tutorials
