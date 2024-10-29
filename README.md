@@ -11,22 +11,23 @@ The model was trained on a dataset consisting of a mix of human-written and AI-g
 
 **Model Architecture**
 
-The core of the model is a Bidirectional Long Short-Term Memory (BiLSTM) network, which is capable of processing sequential data effectively. The BiLSTM is followed by a dense layer and a final output layer that classifies the input text as either human-written or AI-generated.
+The core of the model includes a combination of `SGDClassifier` and `Perceptron`. The final model is selected using `grid_search.best_estimator_` to find the best hyperparameters.
 
 **Training Process**
 
 The model was trained using the following hyperparameters:
 
-* **Optimizer:** Adam
-* **Loss Function:** Binary Cross-Entropy
-* **Batch Size:** 32
-* **Epochs:** 10
+* **Algorithm:** SGDClassifier, Perceptron
+* **Optimizer:** As per the selected estimator from grid search
+* **Loss Function:** (Specify the loss function used for SGDClassifier or Perceptron if applicable)
+* **Batch Size:** (Specify if applicable)
+* **Epochs:** (Specify if applicable)
 
 The model was trained on a GPU-accelerated system to speed up the training process.
 
 **Evaluation**
 
-The model achieved a high accuracy of 92% on the test dataset. Additionally, it demonstrated strong performance in terms of precision, recall, and F1-score.
+The model achieved a high accuracy of 92% on the test dataset using the best estimator from the grid search. Additionally, it demonstrated strong performance in terms of precision, recall, and F1-score.
 
 **Usage**
 
