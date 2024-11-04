@@ -1,4 +1,3 @@
-
 # AI Text Detection in Articles
 
 **Description**
